@@ -1,0 +1,38 @@
+{
+  "name": "babel-nodejs-setup",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bin/dev",
+    "clean": "rm -rf dist",
+    "build": "npm run clean && mkdir dist && babel server -s -d dist",
+    "production": "npm run build && node bin/production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DmsChrisPena/babel-nodejs-setup.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DmsChrisPena/babel-nodejs-setup/issues"
+  },
+  "homepage": "https://github.com/DmsChrisPena/babel-nodejs-setup#readme",
+  "devDependencies": {
+    "babel-cli": "^7.0.0-beta",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-decorators": "^6.24.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^7.0.0-beta",
+    "babel-preset-es2016": "^7.0.0-beta",
+    "babel-preset-es2017": "^7.0.0-beta",
+    "babel-preset-stage-2": "^7.0.0-beta",
+    "babel-register": "^7.0.0-beta"
+  },
+  "description": "",
+  "dependencies": {
+    "dependency-injection-es6": "^1.2.1"
+  }
+}
